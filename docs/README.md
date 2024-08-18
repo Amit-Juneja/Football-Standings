@@ -128,3 +128,23 @@ Redoc:
 Swagger:
 
 ![image](https://github.com/user-attachments/assets/4ed1d4de-c760-46ff-938e-01bdb32a2d2f)
+
+# Follow below steps in order to start the frontend & backend servers
+
+1. clone this repo
+2. cd PS-Frontend
+3. npm install
+4. npm run dev
+
+The above steps will start your frontend server on http://localhost:3000
+
+1. cd PS-Backend
+2. npm install
+3. npm run dev
+
+The above steps will start your backend server on http://localhost:8000
+
+
+# Dockerfile & yaml files for pushing to the container registry using github actions
+
+there is Dockerfile in this repository & yaml files in the .github folders for frontend & backend which will be responsible for pushing the images onto the container registry in the docker environments
