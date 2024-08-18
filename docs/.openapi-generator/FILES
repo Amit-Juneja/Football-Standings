@@ -1,0 +1,8 @@
+.openapi-generator-ignore
+Apis/HealthApi.md
+Apis/StandingsApi.md
+Models/ErrorModel.md
+Models/GetStandingsResponseBody.md
+Models/HealthStatus.md
+Models/getStandings_200_response.md
+README.md
