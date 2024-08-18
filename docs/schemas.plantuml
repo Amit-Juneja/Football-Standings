@@ -1,0 +1,30 @@
+@startuml
+
+title Football Standings API Schemas Diagram
+
+entity ErrorModel {
+    * message: String
+    * error: String
+}
+
+entity GetStandings200Response {
+    * data: List<GetStandingsResponseBody>
+}
+
+entity GetStandingsResponseBody {
+    country_name: String
+    league_id: String
+    league_name: String
+    team_id: String
+    team_name: String
+    overall_league_position: String
+}
+
+entity HealthStatus {
+    * status: String
+}
+
+
+GetStandings200Response -- "0..*" GetStandingsResponseBody : data
+
+@enduml
