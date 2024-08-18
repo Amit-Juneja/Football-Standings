@@ -1,6 +1,6 @@
 # API Diagram
 
-![Plant UML Image](https://github.com/Amit-Juneja/Football-Standings/plantUML.png)
+![Plant UML Image](https://github.com/Amit-Juneja/Football-Standings/blob/main/plantUML.png)
 
 # Documentation for Football Standings API
 
