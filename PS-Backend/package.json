@@ -1,0 +1,45 @@
+{
+  "name": "football-standings-backend",
+  "version": "1.0.0",
+  "description": "Football Standings",
+  "scripts": {
+    "start": "ts-node -r dotenv/config src/server.ts",
+    "start:prod": "node dist/src/server.js",
+    "dev": "npm run schemas && npm run copyfiles && tsc -w & env TZ='UTC' nodemon dist/server.js",
+    "build": "tsc",
+    "build-redoc": "npx @redocly/cli build-docs src/generated/openapi.json",
+    "schemas": "npm run schemas:openapi && npm run schemas:types && npm run build-redoc",
+    "schemas:openapi": "swagger-jsdoc -d src/schemas/definition.yaml src/routes/*.ts \"src/schemas/!(definition).yaml\" -o src/generated/openapi.json",
+    "schemas:types": "openapi-typescript src/generated/openapi.json -o src/generated/index.d.ts",
+    "copyfiles": "copyfiles -u 1 src/generated/*.json dist",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --fix --ext .ts"
+  },
+  "author": "juneja.amit25@gmail.com",
+  "dependencies": {
+    "@types/swagger-ui-express": "4.1.6",
+    "axios": "^1.6.8",
+    "copyfiles": "2.4.1",
+    "dotenv": "16.4.3",
+    "express": "4.18.2",
+    "express-oauth2-jwt-bearer": "^1.6.0",
+    "express-openapi-validator": "5.1.6",
+    "http-status": "1.7.3",
+    "nodemon": "3.0.3",
+    "openapi-typescript": "6.7.4",
+    "prettier": "3.2.5",
+    "swagger-jsdoc": "6.2.8",
+    "swagger-ui-express": "5.0.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.4.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "7.0.1",
+    "@typescript-eslint/parser": "7.0.1",
+    "eslint": "8.56.0",
+    "eslint-config-google": "0.14.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-jsonc": "2.13.0",
+    "eslint-plugin-prettier": "5.1.3"
+  }
+}

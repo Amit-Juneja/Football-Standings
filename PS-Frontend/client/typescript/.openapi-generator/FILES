@@ -1,0 +1,10 @@
+apis/HealthApi.ts
+apis/StandingsApi.ts
+apis/index.ts
+index.ts
+models/ErrorModel.ts
+models/GetStandings200Response.ts
+models/GetStandingsResponseBody.ts
+models/HealthStatus.ts
+models/index.ts
+runtime.ts

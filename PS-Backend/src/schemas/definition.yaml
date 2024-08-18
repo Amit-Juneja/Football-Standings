@@ -1,0 +1,23 @@
+openapi: 3.0.3
+info:
+  title: Football Standings API
+  version: 1.0.0
+servers:
+  - url: /
+    description: Football Standings Server
+tags:
+  - name: health
+    description: Health check
+  - name: standings
+    description: Standings operations
+externalDocs:
+  url: https://apifootball.com/documentation/
+  description: Football Standings
+security:
+  - bearerAuth: []
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

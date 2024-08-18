@@ -1,0 +1,44 @@
+components:
+  schemas:
+    GetStandingsResponseBody:
+      description: Get Standings Response
+      type: object
+      properties:
+        country_name:
+          type: string
+          description: "Country Name"
+          example: "Bahrain"
+        league_id:
+          type: string
+          description: "League ID"
+          example: "59"
+        league_name:
+          type: string
+          description: "League Name"
+          example: "Premier League"
+        team_id:
+          type: string
+          description: "Team ID"
+          example: "11028"
+        team_name:
+          type: string
+          description: "Team Name"
+          example: "Al Khaldiya"
+        overall_league_position:
+          type: string
+          description: "Overall League Position"
+          example: "1"
+  responses:
+    GetStandingsResponse:
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - data
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: "#/components/schemas/GetStandingsResponseBody"

@@ -1,0 +1,12 @@
+components:
+  schemas:
+    HealthStatus:
+      description: Health check status
+      type: object
+      required:
+        - status
+      properties:
+        status:
+          type: string
+          enum:
+            - OK
