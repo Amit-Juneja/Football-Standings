@@ -9,7 +9,7 @@ All URIs are relative to *http://localhost*
 
 <a name="getStandings"></a>
 # **getStandings**
-> GetStandingsResponse getStandings(country, league, team)
+> getStandings_200_response getStandings(league)
 
 Get football standings
 
@@ -19,13 +19,11 @@ Get football standings
 
 |Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **country** | **String**| the country name | [default to null] |
 | **league** | **String**| The league name | [default to null] |
-| **team** | **String**| The team name | [default to null] |
 
 ### Return type
 
-[**GetStandingsResponse**](../Models/GetStandingsResponse.md)
+[**getStandings_200_response**](../Models/getStandings_200_response.md)
 
 ### Authorization
 

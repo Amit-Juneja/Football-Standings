@@ -15,8 +15,9 @@ All URIs are relative to *http://localhost*
 ## Documentation for Models
 
  - [ErrorModel](./Models/ErrorModel.md)
- - [GetStandingsResponse](./Models/GetStandingsResponse.md)
+ - [GetStandingsResponseBody](./Models/GetStandingsResponseBody.md)
  - [HealthStatus](./Models/HealthStatus.md)
+ - [getStandings_200_response](./Models/getStandings_200_response.md)
 
 
 <a name="documentation-for-authorization"></a>
