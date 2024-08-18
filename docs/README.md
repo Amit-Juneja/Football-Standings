@@ -1,3 +1,7 @@
+# API Diagram
+
+![Plant UML Image](https://github.com/Amit-Juneja/Football-Standings/plantUML.png)
+
 # Documentation for Football Standings API
 
 <a name="documentation-for-api-endpoints"></a>
