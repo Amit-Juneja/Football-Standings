@@ -2,6 +2,13 @@
 
 ![Plant UML Image](https://github.com/Amit-Juneja/Football-Standings/blob/main/plantUML.png)
 
+# Demo Screen recording
+
+
+https://github.com/user-attachments/assets/d52ab33e-dc46-4038-9321-18608ffde723
+
+
+
 # Documentation for Football Standings API
 
 <a name="documentation-for-api-endpoints"></a>
