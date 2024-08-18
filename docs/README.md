@@ -117,3 +117,14 @@ Document the API endpoints, request/response schemas, and usage instructions for
 
 ## Conclusion:
 The outlined architecture provides a structured and scalable approach to developing RESTful APIs using TypeScript, Node.js & Express. By following best practices and design principles, developers can build maintainable and efficient APIs to meet the requirements of modern web applications.
+
+
+# Open API Swagger documentation is available when you execute locally at: http://localhost:8000/api-docs & http://localhost:8000/redoc
+
+Redoc:
+
+![image](https://github.com/user-attachments/assets/e97e7bfd-7e52-48a6-9f3f-e52999ae961e)
+
+Swagger:
+
+![image](https://github.com/user-attachments/assets/4ed1d4de-c760-46ff-938e-01bdb32a2d2f)
